@@ -25,7 +25,10 @@ class ViewController: UIViewController {
             let soundsArray = ["bomb", "splash" , "cow", "fart", "kat", "dog"]
             let random = Int(arc4random_uniform(UInt32(soundsArray.count)))
             
-            let fileToPlay = Bundle.main.path(forResource: soundsArray[random], ofType: "mp3")
+            print(soundsArray[random]) // Testing without sounds
+            
+            //IF I download mp3 files code is ready
+            /*let fileToPlay = Bundle.main.path(forResource: soundsArray[random], ofType: "mp3")
             
             do {
                 
@@ -37,7 +40,7 @@ class ViewController: UIViewController {
             
                 print(error)
             
-            }
+            }*/
             
         }
         
